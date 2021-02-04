@@ -4,10 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="/font_awesome/css/all.css" rel="stylesheet">
     <title>Expense Tracker</title>
 </head>
 <body>
-    <p>Hue</p>
+    <div class="container">
+        <!-- Header -->
+        <header><h1>Expense Tracker</h1></header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Balance block -->
+            <div class="one-half">
+                <div class="balance-block">
+                    <div class="balance-block-header">
+                        <h2>Balance</h2>
+                        <h3>January 2021</h3>
+                    </div>
+                    
+                    <div class="balance-graph">
+                        <svg viewBox="0 0 140 140" preserveAspectRatio="xMinYMin meet">
+                            <circle r="60" cx="50%" cy="50%"></circle>
+                            <circle r="60" cx="50%" cy="50%"></circle>
+                        </svg>
+                        <div class="balance-number">
+                            <h2>50,00<span>€</span></h2>
+                        </div>
+                    </div>
+                    <div class="balance-block-footer">
+                        <p>Income: <span id="income-sum">0</span></p>
+                        <p>Expenses: <span id="expense-sum">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="one-half">
+                <!-- Income block -->
+               <div class="income-block">
+                    <div class="income-block-header">
+                        <h2>Income</h2>
+                        <button id="add-income"><i class="fas fa-plus"></i></button>
+                    </div>
+                 
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Ammount</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="income-table"> 
+                            <tr>
+                                <td>2021/02/01</td>
+                                <td>Hue</td>
+                                <td>30,00</td>
+                                <td class="delete-button"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+
+               <!-- Expense block -->
+               <div class="expense-block">
+                    <div class="expense-block-header">
+                        <h2>Expenses</h2>
+                        <button id="add-expense"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Ammount</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="expence-table"> 
+                            <tr>
+                                <td>2021/02/01</td>
+                                <td>Hue</td>
+                                <td>30,00</td>
+                                <td class="delete-button"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>&copy Karolina Karmazaitė 2021</footer>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

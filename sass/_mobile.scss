@@ -1,0 +1,11 @@
+@media(max-width:700px){
+    main{
+        flex-direction: column;
+        .one-half, .balance-block{
+            width: 100%;
+        }
+        .one-half:nth-child(1){
+            margin-bottom: 5%;
+        }
+    }
+}

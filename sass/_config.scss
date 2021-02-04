@@ -1,0 +1,39 @@
+//Variables
+$backgroundColor :#eeeeee;
+$fontFamily : openSans, sans-serif;
+$fontColor: #364353;
+$contentBlock : #ffffff;
+$balanceColor :#1976d2;
+$incomeColor: #4caf50;
+$expenseColor :#f44336;
+$buttonFontColor : #ffffff;
+
+
+%content-block{
+    background-color: $contentBlock;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 5px #bbbbbb;
+    width: 100%;
+    padding: 10px 20px;
+}
+%content-block-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+%content-block-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #bbbbbb;
+    color: $buttonFontColor;
+    font-size: 16px;
+    font-weight: bold;
+    &:hover{
+        transform: scale(.98);
+        cursor: pointer;
+    }
+}
